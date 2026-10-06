@@ -19,8 +19,10 @@ Every build here is:
 - signed with a Developer ID certificate and notarised by Apple, so it opens
   without a warning,
 - Apple Silicon only, macOS 15 or newer,
-- accompanied by a `.sha256` file you can check with
-  `shasum -a 256 -c <file>.sha256`.
+- published as a versioned DMG and ZIP with matching `.sha256` files. For a
+  checksum check, download the versioned file and its sidecar from the release
+  page, then run `shasum -a 256 -c <file>.sha256`. The latest installer alias
+  has the same bytes as that release's versioned DMG.
 
 Already installed? Use **Romotiq → Check for Updates…**. The updater uses a
 small patch when one is available. The ZIP and delta files here are for the
